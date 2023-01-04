@@ -76,3 +76,10 @@ bot.onText(/^\/decrypt(.+)/, (msg, match) => {
 
 // Command for tests
 bot.onText(/^\/test/, (msg) => {});
+
+/*
+    Bot available soon in telegram ( @XXXXX )
+    Created by: Rubén Palomo Fontán
+    LinkedIn: https://www.linkedin.com/in/ruben-palomo-fontan/
+    Contact: ruben.palomof@gmail.com
+ */
