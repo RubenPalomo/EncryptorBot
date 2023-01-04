@@ -74,6 +74,19 @@ bot.onText(/^\/decrypt(.+)/, (msg, match) => {
     );
 });
 
+// Command for help
+bot.onText(/^\/help/, (msg) =>
+  bot.sendMessage(
+    msg.chat.id,
+    "*Bot Commands*\n" +
+      "\n1. Use _/encypt + password + message_ to encrypt a message." +
+      "\n2. Use _/decrypt + password + message_ to decrypt a message or " +
+      "use _/decrypt + password_ to decrypt a message you are replying " +
+      "to.\nThe password must be the same.",
+    { parse_mode: "Markdown" }
+  )
+);
+
 // Command for tests
 bot.onText(/^\/test/, (msg) => {});
 
