@@ -5,6 +5,6 @@
 Bot for telegram that allows you to encrypt messages and decrypt them later through the use of a password. It uses the AES encryption.
 <hr />
 The bot commands are as follows:<br/> 
-1. To encrypt a message you use */encrypt* + the password you want to use + the message you want to encrypt (separated from each other by spaces).
-2. To decrypt a message use */decrypt* + the password used to encrypt the message while replying to the encrypted message.
-3. You can also decrypt the message using the same formula of */decrypt* + password but adding the encrypted message afterwards.
+  1. To encrypt a message you use */encrypt* + the password you want to use + the message you want to encrypt (separated from each other by spaces).
+  2. To decrypt a message use */decrypt* + the password used to encrypt the message while replying to the encrypted message.
+  3. You can also decrypt the message using the same formula of */decrypt* + password but adding the encrypted message afterwards.
