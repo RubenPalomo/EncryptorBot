@@ -74,6 +74,18 @@ bot.onText(/^\/decrypt(.+)/, (msg, match) => {
     );
 });
 
+// Start command
+bot.onText(/^\/start/, (msg) =>
+  bot.sendMessage(
+    msg.chat.id,
+    `Hi ${msg.from.first_name}, nice to meet you!\nI'm your *Encryptor Bot*❤️\n\n` +
+      "Use the _/help_ command to get all the different commands to help you.",
+    {
+      parse_mode: "Markdown",
+    }
+  )
+);
+
 // Command for help
 bot.onText(/^\/help/, (msg) =>
   bot.sendMessage(
