@@ -61,10 +61,8 @@ bot.onText(/^\/decrypt(.+)/, (msg, match) => {
         const message = match[1].replace(pass, "").trim();
         decryptTxt = decryptData(message, pass);
       }
-      if (decryptTxt != "") {
-        const mensaje = bot.sendMessage(msg.chat.id, decryptTxt);
-        mensaje.then((response) => setTimeout(deleteMessage, 30000, response));
-      }
+      if (decryptTxt != "")
+        bot.sendMessage(msg.chat.id, decryptTxt).then((response) => setTimeout(deleteMessage, 30000, response));
     })
     .catch(() =>
       bot.sendMessage(
